@@ -82,7 +82,12 @@ try:
             try:
                 parts = re.split(r"RT[I/]RW\s*[:1\?]*\s*", line)
                 if len(parts) > 1:
-                    data_ktp['RT/RW'] = parts[1].strip()
+                    raw_rt_rw = parts[1].strip() 
+                    if len(raw_rt_rw) == 6:
+                        formatted_rt_rw = f"{raw_rt_rw[0:3]}/{raw_rt_rw[3:]}"
+                        data_ktp['RT/RW'] = formatted_rt_rw
+                    else:
+                        data_ktp['RT/RW'] = raw_rt_rw
             except Exception as e:
                 print(f"Error parsing RT/RW with split: {e}")
 
