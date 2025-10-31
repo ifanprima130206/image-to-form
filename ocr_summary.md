@@ -1,11 +1,7 @@
-
-Berikut rangkuman lengkap dan jelas dari kode Python OCR kamu:
-
-----------
-
 ## 🧠 **Tujuan Program**
 
-Kode ini berfungsi untuk melakukan **OCR (Optical Character Recognition)**, yaitu membaca teks dari gambar menggunakan **Tesseract OCR**, dengan bantuan **OpenCV** untuk pra-pemrosesan gambar.
+Kode ini berfungsi untuk melakukan **OCR (Optical Character Recognition)** khusus pada **KTP (Kartu Tanda Penduduk Indonesia)**.
+Program ini membaca teks dari gambar menggunakan **Tesseract** OCR, dengan bantuan **OpenCV** untuk pra-pemrosesan gambar seperti konversi ke grayscale dan thresholding.
 
 ----------
 
